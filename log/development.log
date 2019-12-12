@@ -614,6 +614,7 @@ puma (4.2.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
   Rendering /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2019-12-12 11:08:03 -0500
 Processing by Rails::WelcomeController#index as HTML
   Parameters: {"internal"=>true}
@@ -665,6 +666,21 @@ actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
 actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
 actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+=======
+Started GET "/" for 104.218.140.34 at 2019-12-12 16:02:49 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 20ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 104.218.140.34 at 2019-12-12 16:02:53 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+>>>>>>> 4a3b485d7205ea9c70b48818a7c50d801a198873
 actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -686,6 +702,7 @@ puma (4.2.0) lib/puma/server.rb:670:in `handle_request'
 puma (4.2.0) lib/puma/server.rb:473:in `process_client'
 puma (4.2.0) lib/puma/server.rb:331:in `block in run'
 puma (4.2.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
   Rendering /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
   Rendered /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
@@ -704,6 +721,27 @@ actionpack (5.0.7.1) lib/action_controller/metal.rb:190:in `dispatch'
 actionpack (5.0.7.1) lib/action_controller/metal.rb:262:in `dispatch'
 actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
 actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+=======
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.6ms)
+Started GET "/about" for 104.218.140.34 at 2019-12-12 16:03:42 +0000
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.7.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+>>>>>>> 4a3b485d7205ea9c70b48818a7c50d801a198873
 actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
 actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `each'
 actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `serve'
@@ -744,6 +782,7 @@ puma (4.2.0) lib/puma/server.rb:670:in `handle_request'
 puma (4.2.0) lib/puma/server.rb:473:in `process_client'
 puma (4.2.0) lib/puma/server.rb:331:in `block in run'
 puma (4.2.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
   Rendering /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
   Rendered /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
 Started GET "/about" for ::1 at 2019-12-12 11:15:25 -0500
@@ -787,6 +826,28 @@ actionpack (5.0.7.1) lib/action_controller/metal.rb:190:in `dispatch'
 actionpack (5.0.7.1) lib/action_controller/metal.rb:262:in `dispatch'
 actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
 actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+=======
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.5ms)
+Started GET "/about" for 104.218.140.34 at 2019-12-12 16:03:45 +0000
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.7.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.7.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+>>>>>>> 4a3b485d7205ea9c70b48818a7c50d801a198873
 actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
 actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `each'
 actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `serve'
@@ -827,6 +888,7 @@ puma (4.2.0) lib/puma/server.rb:670:in `handle_request'
 puma (4.2.0) lib/puma/server.rb:473:in `process_client'
 puma (4.2.0) lib/puma/server.rb:331:in `block in run'
 puma (4.2.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
   Rendering /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
   Rendered /Users/yuho/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
@@ -1027,3 +1089,13 @@ Processing by StaticController#about as HTML
 Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
 
 
+=======
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.9ms)
+>>>>>>> 4a3b485d7205ea9c70b48818a7c50d801a198873
